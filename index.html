@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="google-site-verification" content="JE5G9mxTut0VKJouJ3h0ML85LdSapsCH997SE3oaN6c" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karigu-ini Dairy</title>
+
+    <style>
+        /* ===== PREMIUM COLOR SYSTEM ===== */
+        :root {
+            --primary: #0f3d2e;
+            --secondary: #10b981;
+            --accent: #34d399;
+            --bg: #f6f8f7;
+            --text: #1f2937;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        /* HEADER */
+        header {
+            background: rgba(15, 61, 46, 0.95);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 25px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:var(--accent);
+border-bottom:2px solid var(--accent);
+padding-bottom:3px;
+}
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* HERO */
+        .hero {
+            background: linear-gradient(135deg, rgba(15, 61, 46, 0.85), rgba(16, 185, 129, 0.7)),
+                url('https://images.unsplash.com/photo-1500595046743-cd271d694d30') center/cover;
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .btn{
+background:var(--secondary);
+padding:14px 28px;
+border-radius:40px;
+color:white;
+text-decoration:none;
+display:inline-block;
+margin-top:20px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 15px 30px rgba(0,0,0,0.2);
+}
+
+        /* SECTION */
+        .section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: var(--primary);
+        }
+
+        .section h2::after {
+            content: "";
+            width: 60px;
+            height: 4px;
+            background: var(--secondary);
+            display: block;
+            margin: 10px auto;
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        /* CONTACT */
+        .contact {
+            background: var(--primary);
+            color: white;
+        }
+
+        .contact input,
+        .contact textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 6px;
+        }
+
+        .contact button {
+            width: 100%;
+            padding: 12px;
+            background: var(--secondary);
+            border: none;
+            color: white;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #06281e;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* WHATSAPP */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+        /* FADE IN ANIMATION */
+.fade-in{
+opacity:0;
+transform:translateY(30px);
+transition:all 0.8s ease;
+}
+
+.fade-in.show{
+opacity:1;
+transform:translateY(0);
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Karigu-ini Dairy</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div>
+            <h1>Fresh Milk. Fair Prices. Vision Farmers.</h1>
+            <p>
+                Karigu-ini Dairy connects hardworking farmers to reliable markets, ensuring quality milk, fair earnings, and
+                sustainable growth for our community.
+            </p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>
+            Karigu-ini Dairy Self Help Group, located in Karigu-ini village in Nyeri County, was established in 2005 with a
+            mission to empower local dairy farmers.
+        </p>
+        
+        <p>
+            With over 70 dedicated members, we provide a reliable platform where farmers can sell their milk at fair and
+            competitive prices while ensuring consistent supply to local consumers and dairy companies.
+        </p>
+        
+        <p>
+            We are committed to improving livelihoods, supporting sustainable farming, and building a strong dairy community.
+        </p>
+        
+        <p>
+            <b>Milk Collection Times:</b><br>
+            Morning: 6:00 AM – 7:00 AM<br>
+            Evening: 5:00 PM – 6:30 PM
+        </p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Reliable Milk Collection</h3>
+                <p>We ensure farmers have a dependable market for their milk every day, reducing losses and increasing income.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Quality Milk Supply</h3>
+                <p>We deliver fresh, high-quality milk to local consumers and companies, maintaining strict hygiene standards.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Farmer Empowerment</h3>
+                <p>We support farmers with guidance and collaboration to improve productivity and long-term success.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section fade-in">
+        <h2>Why Choose Karigu-ini Dairy</h2>
+    
+        <div class="cards">
+    
+            <div class="card">
+                <h3>Fair & Reliable Pricing</h3>
+                <p>We ensure farmers receive competitive and consistent prices for their milk, helping them earn a stable
+                    income.</p>
+            </div>
+    
+            <div class="card">
+                <h3>Trusted by the Community</h3>
+                <p>With over 70 members since 2005, we have built a reputation for honesty, transparency, and reliability.
+                </p>
+            </div>
+    
+            <div class="card">
+                <h3>Daily Milk Collection</h3>
+                <p>We provide convenient daily collection times, ensuring farmers never miss an opportunity to sell their
+                    milk.</p>
+            </div>
+    
+            <div class="card">
+                <h3>Quality Assurance</h3>
+                <p>We maintain high standards of hygiene and milk handling to deliver safe and high-quality dairy products.
+                </p>
+            </div>
+    
+            <div class="card">
+                <h3>Strong Leadership</h3>
+                <p>Our experienced leadership team ensures smooth operations and proper management of the group.</p>
+            </div>
+    
+            <div class="card">
+                <h3>Farmer Growth & Support</h3>
+                <p>We are committed to helping farmers improve production, increase income, and grow sustainably.</p>
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <!-- LEADERSHIP -->
+    <section id="leadership" class="section fade-in">
+        <h2>Leadership</h2>
+    
+        <div class="cards">
+    
+            <div class="card">
+                <h3>Peter Mathenge</h3>
+                <p><b>Chairman</b></p>
+                <p>
+                    Leads the Karigu-ini Dairy Self Help Group and oversees all operations and decision-making of the
+                    organization.
+                    He is assisted by other members in ensuring the smooth running and success of the group.
+                </p>
+            </div>
+    
+            <div class="card">
+                <h3>Support Team</h3>
+                <p>
+                    The chairman works together with other members who assist in managing daily activities, finances, and
+                    coordination of the group.
+                </p>
+            </div>
+    
+        </div>
+    
+        <p style="text-align:center; margin-top:20px;">
+            Together, the leadership team ensures accountability, efficiency, and continuous growth of the dairy group.
+        </p>
+    
+    </section>
+    
+         
+
+    <!-- GALLERY (COWS ONLY) -->
+<section class="section">
+    <h2>Our Pride: Healthy Dairy Cows</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30"
+                style="width:100%; border-radius:10px;">
+            <p>Healthy Dairy Cow</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1596733430284-f7437764b1a9"
+                style="width:100%; border-radius:10px;">
+            <p>Grazing Dairy Cow</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1570042225831-d98fa7577f1e"
+                style="width:100%; border-radius:10px;">
+            <p>Quality Dairy Breed</p>
+        </div>
+
+    </div>
+</section>
+<section class="section fade-in">
+    <h2>Our Location</h2>
+
+    <p style="text-align:center; max-width:700px; margin:auto;">
+        Karigu-ini Dairy Self Help Group is located in <b>Karigu-ini Village</b>,
+        Wamagana Ward, Tetu Constituency, Nyeri County, Kenya.
+    </p>
+
+    <p style="text-align:center; margin-top:15px;">
+        We serve farmers and customers across the region with reliable milk collection
+        and supply services.
+    </p>
+
+</section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <h2>Contact Us</h2>
+
+        <p style="text-align:center; max-width:600px; margin:auto;">
+            Interested in supplying milk, partnering with us, or learning more?
+            Reach out today and become part of a growing dairy community that values quality and fairness.
+        </p>
+
+        <form action="https://formspree.io/f/mjgqbzej" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p>📞 0759119195<br>📧 remigachoki@gmail.com</p>
+
+    </section>
+
+    <footer>
+    
+        <h3>Karigu-ini Dairy Self Help Group</h3>
+    
+        <p>
+            Empowering farmers. Delivering quality milk. Building a stronger dairy future.
+        </p>
+    
+        <p style="margin-top:10px;">
+            📍 Nyeri County, Kenya<br>
+            📞 0759119195<br>
+            📧 remigachoki@gmail.com
+        </p>
+    
+        <p style="margin-top:15px; font-size:14px;">
+            © 2026 Karigu-ini Dairy. All rights reserved.
+        </p>
+    
+    </footer>
+
+    <a href="https://wa.me/254759119195" class="whatsapp-float">💬</a>
+
+    <script>
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        });
+
+        document.querySelectorAll(".fade-in").forEach(el => {
+            observer.observe(el);
+        });
+
+    </script>
+</body>
+
+</html>
